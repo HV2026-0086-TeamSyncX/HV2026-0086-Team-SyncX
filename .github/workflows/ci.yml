@@ -1,0 +1,30 @@
+name: DocFin AI CI / Automated Quality Verification
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    name: Typecheck, Lint, Pipeline Tests & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Full Production Test Suite
+        run: npm test
+        env:
+          NEXT_PUBLIC_APP_URL: "http://localhost:3000"
