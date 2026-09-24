@@ -14,7 +14,7 @@
 
 **A multimodal document reasoning engine, spatial coordinate grounding system, and conversational intelligence workspace for high-stakes financial, legal, and operational analysis.**
 
-[🌐 Live Production Demo](https://docfin-ai.vercel.app/) • [📊 Workspace Dashboard](https://docfin-ai.vercel.app/dashboard) • [💻 GitHub Repository](https://github.com/HV2026-0086-TeamSyncX/HV2026-0086-Team-SyncX.git) • [📄 Project Documentation](DEPLOYMENT.md)
+[🌐 Live Production Demo](https://docfinai.vercel.app/) • [📊 Workspace Dashboard](https://docfinai.vercel.app/dashboard) • [💻 GitHub Repository](https://github.com/HV2026-0086-TeamSyncX/HV2026-0086-Team-SyncX.git) • [📄 Project Documentation](DEPLOYMENT.md)
 
 </div>
 
@@ -237,7 +237,7 @@ DocFin AI is pre-configured for seamless, zero-config deployment on Vercel:
 3. **Set Environment Variables**:
    In the Vercel deployment modal, add:
    - `GEMINI_API_KEY`: Your Google Gemini API key.
-   - `NEXT_PUBLIC_APP_URL`: Your Vercel production domain (e.g., `https://docfin-ai.vercel.app`).
+   - `NEXT_PUBLIC_APP_URL`: Your Vercel production domain (e.g., `https://docfinai.vercel.app`).
    - *(Optional)* `UPSTASH_REDIS_REST_URL` & `UPSTASH_REDIS_REST_TOKEN`
    - *(Optional)* `QDRANT_URL` & `QDRANT_API_KEY`
    - *(Optional)* `NEXT_PUBLIC_SUPABASE_URL` & `NEXT_PUBLIC_SUPABASE_ANON_KEY`
